@@ -1,3 +1,4 @@
+
 /*FUNCIONES */ 
 
 /* funcion que capta el mensaje */ 
@@ -10,12 +11,13 @@ function captMess(){
 	//Variable con el elemento boton 
 	var btn=document.getElementById("btn"); 
 	//creando nodo de texto 
-	var txtComment= document.createTextNode(comentario)
+	var txtComment= document.createTextNode(comentario); 
 	//creando div padre 
 	var divMess=document.createElement("div");
 	//Creando un parrafo para contener el texto 
 	divMess.classList.add("newDiv");
-	var txt=document.createElement("p"); 
+	var txt=document.createElement("p");
+	txt.setAttribute("class","parrafoComentario"); 	
 	// llamo al div Dios ; 
 	var cont=document.getElementById("cont"); 
 	txt.appendChild(txtComment);
@@ -28,7 +30,7 @@ function contar(){
 	var txtNum=document.getElementById("comment").value; 
 	var largo= txtNum.length;
 	var contador = 139; 
-	contador=contador - largo;
+	contador= contador - largo;
 	var parNum=document.getElementById("parNum"); 
 	parNum.innerHTML= contador;
 
@@ -36,10 +38,17 @@ function contar(){
 		if (largo >= 120){
 		var contador=document.getElementById("parNum"); 
 		contador.classList.add("colorDos");  
+		contador.classList.remove("colorTres");
+		var boton=document.getElementById("btn"); 
+		boton.removeAttribute("disabled");
 		if(largo >= 130){
 		var contador=document.getElementById("parNum"); 
 		contador.classList.remove("colorDos"); 
 		contador.classList.add("colorTres"); 
+		contador.classList.remove("colorUno");
+		var boton=document.getElementById("btn"); 
+		boton.removeAttribute("disabled");
+
 		if(largo>=140){
 		var contador=document.getElementById("parNum"); 
 		contador.classList.remove("colorTres");

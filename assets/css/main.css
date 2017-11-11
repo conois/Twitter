@@ -1,27 +1,27 @@
-* {
+*{
+	margin: 0;
+	padding: 0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
 }
 
-*:before, *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
 body {
 	margin: 0 auto;
-	background: #E7C5C5; 
+	background: url(../images/wallpapers_coffe.jpeg); 
+	background-size: cover;
 	font-family: 'Inconsolata', monospace;
 
 }
 
 #container{
 	width: 100%;
-	height: 10%;
-	background-color: #6AD2F3;
+	height: 80px;
+	background-color: #01C8F1;
 	text-align: center;
+	padding-top: 15px;
 }
 
 header div h1{
@@ -31,18 +31,28 @@ header div h1{
 #firstBox{
 	display: inline-block;
 	width: 400px;
-	height: 210px;
+	height: 200px;
 	background-color: white;
 	padding-left: 30px;
 	padding-top: 25px;
 	margin-left: 150px;
 	margin-top: 20px;
+	border-radius: 5px;
 }
 
+#firstBox h4{
+	padding-top: 10px;
+}
 
-section div p{
+#firstBox hr{
+	margin-top: 20px;
+	width: 340px;
+}
+
+#firstBox p{
 	color: #6164E9; 
 	text-transform: uppercase;
+	padding-top: 10px;
 }
 
 #messBox{
@@ -50,20 +60,28 @@ section div p{
 	float: right;
 	margin-right: 180px;
 	top: 20px;
-	height: 250px;
-	width: 550px;
+	height: 200px;
+	width: 490px;
 	background: white; 
+	border-radius: 5px;
 
 }
 
 #comment{
-	margin-top: 20px;
-	margin-left: 15px;
+	height: auto; 
+	margin-top: 25px;
+	margin-left: 25px;
+	border-radius: 5px;
+	min-height: 50px;
+	max-height: 200px;
+	overflow: auto;
+
 }
 
 #btn{
 	margin-top: 20px;
-	margin-left: 15px;
+	margin-left: 25px;
+	border-radius: 5px;
 	height: 30px;
 	width: 100px;
 	background-color: #6AD2F3; 
@@ -75,13 +93,19 @@ section div p{
 #contador{
 	position: relative;
 	float: right;
-	margin-right: 45px;
+	margin-right: 30px;
 	height: 40px;
 	width: 120px;
-	outline: 2px solid black; 
+	/*outline: 2px solid black;*/
 	margin-top: 20px;
+
 }
 
+#parNum {
+	padding-left: 40px;
+	font-size: 18px;
+	font-weight: bold;
+}
 .colorUno{
 	color:blue;
 
@@ -101,8 +125,6 @@ section div p{
 }
 */
 
-
-
 #cont{
 	height: auto;
 	width: 1200px;
@@ -113,13 +135,23 @@ section div p{
 }
 
 .newDiv{
-	height: auto;
-	width: 1100px;
+	height: 100px;
+	width: 1040px;
 	background-color: white;
 	margin-top: 30px;
-	margin-left: 100px;
+	margin-left: 150px;
 	border-radius: 5px;
 	padding-top: 5px;
 	padding-left: 20px;
-	outline: 2px solid black ; 
+	/*outline: 2px solid black ; */
+	overflow: auto;
+	padding-right: 200px;
+
 }
+
+.parrafoComentario{
+	padding-bottom: 10px;
+	width: 500px; 
+	height: 80px;
+	padding-right: 200px;
+
