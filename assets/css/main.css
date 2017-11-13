@@ -144,14 +144,15 @@ header div h1{
 	padding-top: 5px;
 	padding-left: 20px;
 	/*outline: 2px solid black ; */
-	overflow: auto;
-	padding-right: 200px;
+	padding-right: 20px; 
+	word-wrap: break-word;
 
 }
 
 .parrafoComentario{
 	padding-bottom: 10px;
-	width: 500px; 
+	width: 1200px; 
 	height: 80px;
 	padding-right: 200px;
+	line-height: 20px;
 
