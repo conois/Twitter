@@ -68,7 +68,7 @@ header div h1{
 }
 
 #comment{
-	height: auto; 
+	height: 60px; 
 	margin-top: 25px;
 	margin-left: 25px;
 	border-radius: 5px;

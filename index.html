@@ -17,7 +17,7 @@
 <section>
 	<div id="firstBox">
 		<h3>Reto de codigo</h3>
-		<h4>Hola,</h4>
+		<h4>Hola, </h4>
 		<h4>soy frond-end developers jr. </h4>
 
 		<hr>
@@ -28,7 +28,7 @@
 <!--Caja para escribir el mensaje -->
 
 	<div id="messBox">
-		<textarea id="comment" placeholder="¿Que estas pensando?" cols="60" rows="4"  onkeydown="contar()"  ></textarea>
+		<textarea id="comment" placeholder="¿Que estas pensando?" cols="60" rows="4"  onkeydown="contar()" onkeyup="if(onkeyup.keyCode == 13) enter()"  ></textarea>
 		<button type="button" id="btn" onclick="captMess()">TWEET</button> 
 
 		<div id="contador"> <p id="parNum">140</p> </div>
