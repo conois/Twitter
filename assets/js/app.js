@@ -1,15 +1,6 @@
 
 /*FUNCIONES */ 
 
-/* validar el ingreso de texto */ 
-function validarTexto(){
-	var txtArea= document.getElementById("comment").value; 
-	if (txtArea!=""){
-			var btn=document.getElementById("btn"); 
-			btn.setAttribute("onclick", "captMess()"); 
-	}
-}
-
 /* funcion que capta el mensaje */ 
 
 function captMess(){
@@ -39,7 +30,8 @@ function captMess(){
 		var momentoActual= new Date();
 		var hora= momentoActual.getHours(); 
 		var minutos= momentoActual.getMinutes(); 
-		var horaImprimible= hora + ":" + minutos ; 
+		var segundos=momentoActual.getSeconds(); 
+		var horaImprimible= hora + ":" + minutos + ":" + segundos; 
 		txt.innerHTML+= "<br>" + horaImprimible;
 	}
 	
