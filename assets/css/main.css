@@ -4,156 +4,120 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-
 }
-
 
 body {
 	margin: 0 auto;
 	background: url(../images/wallpapers_coffe.jpeg); 
 	background-size: cover;
 	font-family: 'Inconsolata', monospace;
-
 }
 
-#container{
-	width: 100%;
+header{ 
 	height: 80px;
-	background-color: #01C8F1;
-	text-align: center;
-	padding-top: 15px;
 }
 
-header div h1{
+h1{
+	color: white;
+	margin-top: 14px;
+	font-weight: 600;
+}
+.first{
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;  
+}
+.boxmision, .boxcomment{
+	height: 240px;
+	padding-top: 30px;
+	padding-left: 15px; 
+	padding-right: 15px; 
+	color: white; 
+	/*border-style: solid; 
+	border-color: white; 
+	border-radius: 5px; 	*/
+}
+
+.boxmisionmov{
+	height: 200px;
+	padding-top: 30px;
+	padding-left: 15px; 
+	padding-right: 15px; 
 	color: white;
 }
 
-#firstBox{
-	display: inline-block;
-	width: 400px;
-	height: 200px;
-	background-color: white;
-	padding-left: 30px;
-	padding-top: 25px;
-	margin-left: 150px;
-	margin-top: 20px;
-	border-radius: 5px;
+textarea{
+	resize: none; 
+	border: none;
+	background-color: transparent;
+	color: white; 
 }
 
-#firstBox h4{
-	padding-top: 10px;
+textarea:focus{
+	outline: 0 none;
+	overflow-x: auto;
+	word-wrap: break-word;
+ 
 }
 
-#firstBox hr{
-	margin-top: 20px;
-	width: 340px;
+.contador{
+	display: inline;
+	/*margin-left: 400px;*/
+}
+.btn-tweet{
+	margin-left: 20px; 
+}
+.comentarios{
+	margin-bottom: 30px; 
+}
+.post{
+	/*border-style: solid; 
+	border-width: 1px; 
+	border-color: white; 
+	border-radius: 5px;*/     
+	height: auto; 
+	margin-top: 30px; 
+	transform: skew(0deg); 
+  -webkit-transform: skew(0deg); 
+  border-top: 1px solid white; 
+  border-left: 5px solid transparent; 
+  border-right: 5px solid transparent; 
+  border-bottom: 1px solid white;
+  word-wrap: break-word;
+
 }
 
-#firstBox p{
-	color: #6164E9; 
-	text-transform: uppercase;
-	padding-top: 10px;
+.glyphicon{
+	margin-left: 5px; 
+	margin-right: 10px;
+	margin-top: 20px;  
+	font-size: 18px; 
 }
-
-#messBox{
-	position: relative;
+.glyphicon-heart{
+	color: #FFF; 
+}
+.glyphicon-trash{
+	color: #FFF; 
 	float: right;
-	margin-right: 180px;
-	top: 20px;
-	height: 200px;
-	width: 490px;
-	background: white; 
-	border-radius: 5px;
-
+}
+.glyphicon-trash:hover, .glyphicon-heart:hover{
+	font-size: 20px; 
 }
 
-#comment{
-	height: 60px; 
-	margin-top: 25px;
-	margin-left: 25px;
-	border-radius: 5px;
-	min-height: 50px;
-	max-height: 200px;
-	resize: none;
-
+.mess{
+	color: white; 
+	padding-top: 10px;
+	overflow: auto
 }
 
-#btn{
-	margin-top: 20px;
-	margin-left: 25px;
-	border-radius: 5px;
-	height: 30px;
-	width: 100px;
-	background-color: #6AD2F3; 
-	color: white;
-	text-align: center;
-	border:none;
-}
-
-#contador{
-	position: relative;
-	float: right;
-	margin-right: 30px;
-	height: 40px;
-	width: 120px;
-	/*outline: 2px solid black;*/
-	margin-top: 20px;
-
-}
-
-#parNum {
-	padding-left: 40px;
-	font-size: 18px;
-	font-weight: bold;
-	text-align: right;
-}
 .colorUno{
-	color:blue;
-
+	color: #B2B8EE; 
 }
 .colorDos{
-	color: #F22727;
-
+	color: #B6F61E; 
 }
 .colorTres{
-	color: #9314A6; 
-
+	color: red;
 }
-
-/*
-#btn::placeholder{
-	font-family: 'Inconsolata', monospace;
+.colorCuatro{
+	color: #FFF; 
 }
-*/
-
-#cont{
-	height: auto;
-	width: 1200px;
-	background-color: white;
-	margin-top: 100px;
-	margin-left: 100px;
-	border-radius: 5px;
-}
-
-.newDiv{
-	height: 100px;
-	width: 1040px;
-	background-color: white;
-	margin-top: 30px;
-	margin-left: 150px;
-	border-radius: 5px;
-	padding-top: 5px;
-	padding-left: 20px;
-	/*outline: 2px solid black ; */
-	padding-right: 20px; 
-	word-wrap: break-word;
-
-}
-
-.parrafoComentario{
-	padding-bottom: 10px;
-	width: 1200px; 
-	height: 80px;
-	padding-right: 200px;
-	line-height: 20px;
-

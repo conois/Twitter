@@ -2,45 +2,59 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Twitter</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
+
 <body>
-<header>
-	<div id="container">
-		<h1>Twitter</h1>
-	</div>
-</header>
 
-<section>
-	<div id="firstBox">
-		<h3>Reto de codigo</h3>
-		<h4>Hola, </h4>
-		<h4>soy frond-end developers jr. </h4>
+	<header>
+		<div class="container">
+			<div class="row col-xs-10">
+				<h1 class="">Twitter</h1>
+			</div>
+		</div>
+	</header>
 
-		<hr>
+	<section>
+		<div class="container first">
+			<div class="row">
+				<div class="col-xs-11 col-lg-3 boxmision hidden-xs hidden-sm">
+					<h3><em>Code Mision</em></h3>
+					<p>Creating my own seccion post. <br> Apply HTML5 / CSS / Bootstrap / Javascript</p>
+					<p>- Front-end Developer - </p>
+				</div>
 
-		<p>Código</p>
-	</div>
+				<div class="col-xs-11 col-lg-6 boxmisionmov hidden-lg">
+					<h3><em>Code Mision</em></h3>
+					<p>Creating my own seccion post. <br> Apply HTML5 / CSS / Bootstrap / Javascript</p>
+					<p>- Front-end Developer - </p>
+				</div>
 
-<!--Caja para escribir el mensaje -->
+				<!--Seccion para nuevo mensaje -->
+				<div class="col-lg-6 comentarios">
+					<div id="boxpost"></div>
+				</div>
 
-	<div id="messBox">
-		<textarea id="comment" placeholder="¿Que estas pensando?" cols="60" rows="4"  onkeydown="contar()" onkeyup="if(onkeyup.keyCode == 13) enter()"  ></textarea>
-		<button type="button" id="btn" onclick="captMess()">TWEET</button> 
+		    <!--Caja para escribir el mensaje -->
+				<div class="col-xs-11 col-lg-3 boxcomment">
+					<textarea id="newpost" cols="35" rows="6" placeholder="Write you post ... "></textarea>
+					<div> 
+						<p id="cuenta"class="contador col-xs-6">140</p>
+						<button id='tweet' class="btn btn-primary btn-tweet col-xs-3">Tweet!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> 
 
-		<div id="contador"> <p id="parNum">140</p> </div>
-		
-	</div>
-</section>
 
-<!--Seccion para nuevo mensaje -->
-<section id="mess">
-	<div id="cont"></div>
-</section>
-<script type="text/javascript" <source src="assets/js/app.js" type="">></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/app2.js"></script>
 </body>
 </html>
 

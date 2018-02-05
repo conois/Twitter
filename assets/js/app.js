@@ -3,7 +3,7 @@
 
 /* funcion que capta el mensaje */ 
 
-function captMess(){
+window.onload=function captMess(){
 	//tomo el valor del textArea y lo guardo en una variable 
 	var comentario = document.getElementById("comment").value;  
 	//limpiar el textArea
@@ -40,7 +40,7 @@ function captMess(){
 
 }
 
-function contar(){ 
+window.onload=function contar(){ 
 	var txtNum=document.getElementById("comment").value; 
 	var largo= txtNum.length;
 	var contador = 139; 
@@ -78,7 +78,7 @@ function contar(){
 
 //ejecutar esta funcion si al presionar teclar enter se agrande en 10 px el textarea 
 //editando el alto del textarea 
-function enter(){
+window.onload=function enter(){
 	var txtArea=document.getElementById("comment"); 
 	contador=60
 	comment.style.height= (contador) +"px"; 
